@@ -11,6 +11,8 @@ body{
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    background: url(../images/adidas-bg2.jpg) no-repeat center fixed;
+    background-size: cover;
 }
 .container{
     width: 50rem;
@@ -59,7 +61,8 @@ body{
 .info h3{
     font-size: 1.3rem;
     padding: 2rem 0;
-    color: #585858;
+    /* color: #585858; */
+    color: lightcoral;
     font-weight: lighter;
     transition: all 0.75s ease-out; 
 }
@@ -78,7 +81,7 @@ body{
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
-    color: #585858;
+    color: white;
 }
 button.active{
     background: #585858;
@@ -100,4 +103,40 @@ button.active{
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        width: 20rem;
+    }
+    .card{
+        width: 100%;
+        max-height: 65vh;
+        margin:0;
+    }
+    .sneaker{
+        max-height: 35vh;
+    }
+    .sneaker img{
+        width: 10rem;
+    }
+    .circle{
+        width: 10rem;
+        height: 10rem;
+    }
+    .info h1{
+        font-size: 1.5rem;
+        transition: all 0.75s ease-out;
+    }
+    .info h3{
+        font-size: 0.9rem;
+    }
+    .sizes button{
+        padding: 0.5rem 0.5rem;
+    }
+    .purchase{
+        margin-top :0.5rem;
+        transition: all 0.75s ease-out;
+    }
+    
 }
